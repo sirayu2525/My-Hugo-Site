@@ -6,6 +6,8 @@ title = 'My First Article'
 
 # 初めての記事
 
+## Hugoの基本的な初期設定
+
 Hugoで作ってみた。
 
 高速でいいね。（MacProのせいかもだけど）
@@ -13,6 +15,8 @@ Hugoで作ってみた。
 マークダウンでかけるのが普通に熱い
 
 一応最初のコマンド載せておきます
+
+<!--more-->
 
 ```
 雛形の作成
@@ -46,3 +50,27 @@ rm -r public
 
 おすすめ記事
 https://juggernautjp.info/getting-started/directory-structure/
+
+## Hugoの運用のための基本知識
+
+1.
+自分のプロジェクトとテーマのプロジェクトの二つがあり、それらの構造はほとんど同じである。
+カスタマイズ性は確保されており、CSSや（多分）layoutsも変えれる。
+
+2.
+アンダーバーの意味については以下のイメージ図がわかりやすい。
+URL: /post/
+  → 表示されるのは
+     - layouts/post/list.html でレイアウト
+     - content/post/_index.md で本文を表示
+
+URL: /post/first-article/
+  → 表示されるのは
+     - layouts/_default/single.html でレイアウト
+     - content/post/first-article.md の本文
+
+3.
+```
+<!--more-->
+```
+これでReadmoreの前の部分と後の部分を分けれる

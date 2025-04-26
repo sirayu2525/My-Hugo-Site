@@ -16,9 +16,9 @@ title = 'My First Site'
 VPSにホスティング（今思えばVercelでも良かったかも）
 Supabaseをデータベースとして採用。
 　（Team機能などで部活全体で管理がしやすい。）
-
+<!--more-->
 https://hamubasu.com
-![hamubasu](./ハムバス.png)
+![hamubasu](/images/ハムバス.png)
 
 
 ## 全体の構造
@@ -26,7 +26,7 @@ https://hamubasu.com
 コンポーネント開発を基本とする。再利用できるものが多かった。
 https://hamubasu.com
 
-![alt text](<スクリーンショット 2025-04-16 135429.png>)
+![hamubasu](/images/hamubasu.png)
 
 ## Next.jsについて
 

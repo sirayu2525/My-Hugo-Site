@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 26 Apr 2025 10:21:28 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Article</title>
+      <link>http://localhost:1313/posts/my-first-article/</link>
+      <pubDate>Sat, 26 Apr 2025 10:21:28 +0900</pubDate>
+      <guid>http://localhost:1313/posts/my-first-article/</guid>
+      <description>&lt;h1 id=&#34;初めての記事&#34;&gt;初めての記事&lt;/h1&gt;&#xA;&lt;h2 id=&#34;hugoの基本的な初期設定&#34;&gt;Hugoの基本的な初期設定&lt;/h2&gt;&#xA;&lt;p&gt;Hugoで作ってみた。&lt;/p&gt;&#xA;&lt;p&gt;高速でいいね。（MacProのせいかもだけど）&lt;/p&gt;&#xA;&lt;p&gt;マークダウンでかけるのが普通に熱い&lt;/p&gt;&#xA;&lt;p&gt;一応最初のコマンド載せておきます&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
