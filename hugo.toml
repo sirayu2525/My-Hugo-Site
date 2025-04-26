@@ -1,11 +1,12 @@
 baseURL = "http://localhost:1313/"
 languageCode = "ja-jp"
-title = "My Hugo Site"
+title = "My Blog"
 theme = "ananke"
 
 [params]
   author = "ティーチ"
   description = "私のこれまでの記事をまとめています。"
+  custom_css = ["css/custom.css"]
 
 [menu]
   [[menu.main]]
