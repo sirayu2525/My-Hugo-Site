@@ -1,6 +1,19 @@
-# my-hugo-site
++++
+date = '2025-04-26T10:21:28+09:00'
+draft = false
+title = 'My First Article'
++++
 
-## 初めのコマンド
+# 初めての記事
+
+Hugoで作ってみた。
+
+高速でいいね。（MacProのせいかもだけど）
+
+マークダウンでかけるのが普通に熱い
+
+一応最初のコマンド載せておきます
+
 ```
 雛形の作成
 hugo new site my-hugo-site
@@ -19,6 +32,9 @@ git add .
 git commit -m "initial commit"
 git push -u origin main
 
+新しい記事の作り方
+hugo new posts/NAME.md
+
 ```
 
 きしょいエラーが出た時はリセットしよう
@@ -28,3 +44,5 @@ rm -r reosources
 rm -r public
 ```
 
+おすすめ記事
+https://juggernautjp.info/getting-started/directory-structure/

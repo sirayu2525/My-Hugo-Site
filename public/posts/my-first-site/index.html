@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My First Site | My Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="初めてサイトを作ったので共有する
+経緯
+大学にまめちしきなどの情報を取りまとめて、発信している個人のツイッターがある。
+その人に頼まれて、豆知識をまとめる形でサイト制作を依頼された。
+採用技術および使用ツール
+１００％Next.jsで作成
+VPSにホスティング（今思えばVercelでも良かったかも）
+Supabaseをデータベースとして採用。
+　（Team機能などで部活全体で管理がしやすい。）
+https://hamubasu.com
+
+全体の構造
+コンポーネント開発を基本とする。再利用できるものが多かった。
+https://hamubasu.com
+
+Next.jsについて
+AppRouterを採用しました。
+PagesRouterの問題の一つであるバケツリレー（Props Drilling）が起きやすそうな構造。
+(実際は、page.tsxでデータフェッチしてそれをpropsでArticleListのコンポーネントに渡していてバケツリレーしてしまった)
+サーバー側での処理（データフェッチ等）がメインだったので、ＲＳＣの思想とも合致する。
+改善点
+
+App RouterではServer Componentsでのデータフェッチが利用可能なので、
+できるだけ末端のコンポーネントへデータフェッチをコロケーションすることを推奨しています
+とあるのでpage.tsxでするのはあまりよろしくない。
+RouteHandlerをサーバーサイドで使ってしまっている。
+感想">
+    <meta name="generator" content="Hugo 0.147.0">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    <meta name="author" content="ティーチ">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/my-first-site/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/my-first-site/">
+  <meta property="og:site_name" content="My Hugo Site">
+  <meta property="og:title" content="My First Site">
+  <meta property="og:description" content="初めてサイトを作ったので共有する 経緯 大学にまめちしきなどの情報を取りまとめて、発信している個人のツイッターがある。 その人に頼まれて、豆知識をまとめる形でサイト制作を依頼された。
+採用技術および使用ツール １００％Next.jsで作成 VPSにホスティング（今思えばVercelでも良かったかも） Supabaseをデータベースとして採用。 （Team機能などで部活全体で管理がしやすい。）
+https://hamubasu.com 全体の構造 コンポーネント開発を基本とする。再利用できるものが多かった。 https://hamubasu.com
+Next.jsについて AppRouterを採用しました。 PagesRouterの問題の一つであるバケツリレー（Props Drilling）が起きやすそうな構造。 (実際は、page.tsxでデータフェッチしてそれをpropsでArticleListのコンポーネントに渡していてバケツリレーしてしまった)
+サーバー側での処理（データフェッチ等）がメインだったので、ＲＳＣの思想とも合致する。
+改善点 App RouterではServer Componentsでのデータフェッチが利用可能なので、 できるだけ末端のコンポーネントへデータフェッチをコロケーションすることを推奨しています とあるのでpage.tsxでするのはあまりよろしくない。
+RouteHandlerをサーバーサイドで使ってしまっている。
+感想">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-26T18:29:53+09:00">
+    <meta property="article:modified_time" content="2025-04-26T18:29:53+09:00">
+
+  <meta itemprop="name" content="My First Site">
+  <meta itemprop="description" content="初めてサイトを作ったので共有する 経緯 大学にまめちしきなどの情報を取りまとめて、発信している個人のツイッターがある。 その人に頼まれて、豆知識をまとめる形でサイト制作を依頼された。
+採用技術および使用ツール １００％Next.jsで作成 VPSにホスティング（今思えばVercelでも良かったかも） Supabaseをデータベースとして採用。 （Team機能などで部活全体で管理がしやすい。）
+https://hamubasu.com 全体の構造 コンポーネント開発を基本とする。再利用できるものが多かった。 https://hamubasu.com
+Next.jsについて AppRouterを採用しました。 PagesRouterの問題の一つであるバケツリレー（Props Drilling）が起きやすそうな構造。 (実際は、page.tsxでデータフェッチしてそれをpropsでArticleListのコンポーネントに渡していてバケツリレーしてしまった)
+サーバー側での処理（データフェッチ等）がメインだったので、ＲＳＣの思想とも合致する。
+改善点 App RouterではServer Componentsでのデータフェッチが利用可能なので、 できるだけ末端のコンポーネントへデータフェッチをコロケーションすることを推奨しています とあるのでpage.tsxでするのはあまりよろしくない。
+RouteHandlerをサーバーサイドで使ってしまっている。
+感想">
+  <meta itemprop="datePublished" content="2025-04-26T18:29:53+09:00">
+  <meta itemprop="dateModified" content="2025-04-26T18:29:53+09:00">
+  <meta itemprop="wordCount" content="27">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My First Site">
+  <meta name="twitter:description" content="初めてサイトを作ったので共有する 経緯 大学にまめちしきなどの情報を取りまとめて、発信している個人のツイッターがある。 その人に頼まれて、豆知識をまとめる形でサイト制作を依頼された。
+採用技術および使用ツール １００％Next.jsで作成 VPSにホスティング（今思えばVercelでも良かったかも） Supabaseをデータベースとして採用。 （Team機能などで部活全体で管理がしやすい。）
+https://hamubasu.com 全体の構造 コンポーネント開発を基本とする。再利用できるものが多かった。 https://hamubasu.com
+Next.jsについて AppRouterを採用しました。 PagesRouterの問題の一つであるバケツリレー（Props Drilling）が起きやすそうな構造。 (実際は、page.tsxでデータフェッチしてそれをpropsでArticleListのコンポーネントに渡していてバケツリレーしてしまった)
+サーバー側での処理（データフェッチ等）がメインだったので、ＲＳＣの思想とも合致する。
+改善点 App RouterではServer Componentsでのデータフェッチが利用可能なので、 できるだけ末端のコンポーネントへデータフェッチをコロケーションすることを推奨しています とあるのでpage.tsxでするのはあまりよろしくない。
+RouteHandlerをサーバーサイドで使ってしまっている。
+感想">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        My Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">My First Site</h1>
+      
+      <p class="tracked"><strong>ティーチ</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-04-26T18:29:53+09:00">April 26, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="初めてサイトを作ったので共有する">初めてサイトを作ったので共有する</h1>
+<h2 id="経緯">経緯</h2>
+<p>大学にまめちしきなどの情報を取りまとめて、発信している個人のツイッターがある。
+その人に頼まれて、豆知識をまとめる形でサイト制作を依頼された。</p>
+<h2 id="採用技術および使用ツール">採用技術および使用ツール</h2>
+<p>１００％Next.jsで作成
+VPSにホスティング（今思えばVercelでも良かったかも）
+Supabaseをデータベースとして採用。
+　（Team機能などで部活全体で管理がしやすい。）</p>
+<p><a href="https://hamubasu.com">https://hamubasu.com</a>
+<img src="./%E3%83%8F%E3%83%A0%E3%83%90%E3%82%B9.png" alt="hamubasu"></p>
+<h2 id="全体の構造">全体の構造</h2>
+<p>コンポーネント開発を基本とする。再利用できるものが多かった。
+<a href="https://hamubasu.com">https://hamubasu.com</a></p>
+<p><img src="%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-04-16%20135429.png" alt="alt text"></p>
+<h2 id="nextjsについて">Next.jsについて</h2>
+<p>AppRouterを採用しました。
+PagesRouterの問題の一つであるバケツリレー（Props Drilling）が起きやすそうな構造。
+(実際は、page.tsxでデータフェッチしてそれをpropsでArticleListのコンポーネントに渡していてバケツリレーしてしまった)</p>
+<p>サーバー側での処理（データフェッチ等）がメインだったので、ＲＳＣの思想とも合致する。</p>
+<h2 id="改善点">改善点</h2>
+<blockquote>
+<p>App RouterではServer Componentsでのデータフェッチが利用可能なので、
+できるだけ末端のコンポーネントへデータフェッチをコロケーションすることを推奨しています
+とあるのでpage.tsxでするのはあまりよろしくない。</p></blockquote>
+<p>RouteHandlerをサーバーサイドで使ってしまっている。</p>
+<h2 id="感想">感想</h2>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  My Hugo Site 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
