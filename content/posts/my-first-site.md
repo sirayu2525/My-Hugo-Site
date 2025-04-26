@@ -1,6 +1,6 @@
 +++
 date = '2025-04-26T18:29:53+09:00'
-draft = true
+draft = false
 title = 'My First Site'
 +++
 # 初めてサイトを作ったので共有する
